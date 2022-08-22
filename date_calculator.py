@@ -39,9 +39,9 @@ def calculate(first_date, second_date):
     try:
         difference = second_date.get_date() - first_date.get_date()
         messagebox.showinfo("Difference", f"{difference.days} days/"
-                            f"{round(difference.days / 7, 1)} weeks/"
-                            f"{round(difference.days / 30.437, 1)} months/"
-                            f"{round(difference.days / 365.25, 1)} years.")
+                            f"{round(difference.days / 7, 2)} weeks/"
+                            f"{round(difference.days / 30.437, 2)} months/"
+                            f"{round(difference.days / 365.25, 2)} years.")
 
     except:
         try:
